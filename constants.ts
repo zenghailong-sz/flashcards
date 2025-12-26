@@ -332,7 +332,7 @@ const unit5Phrases = [
 ];
 
 /* =========================================
-   UNIT 6 DATA (EXISTING)
+   UNIT 6 DATA
    ========================================= */
 const vocabularyRaw6 = [
   { front: 'author', pos: 'n.', back: '作者; 作家' },
@@ -391,7 +391,135 @@ const phrasesRaw6 = [
   { front: 'on the other side of the river', back: '在河的对岸' }
 ];
 
-// Helper to compile unit data
+/* =========================================
+   UNIT 7 DATA
+   ========================================= */
+const unit7Vocab = [
+  { front: 'memory', pos: 'n.', back: '记忆; 记忆力' },
+  { front: 'memorize', pos: 'v.', back: '记住' },
+  { front: 'lose', pos: 'v.', back: '丧失; 失去; lost-lost' },
+  { front: 'loss', pos: 'n.', back: '损失' },
+  { front: 'lost', pos: 'adj.', back: '失去的' },
+  { front: 'get lost', pos: 'adj.', back: '迷路; 迷失' },
+  { front: 'regular', pos: 'adj.', back: '有规律的' },
+  { front: 'regularly', pos: 'adv.', back: '有规律地' },
+  { front: 'repeat', pos: 'v.', back: '重复' },
+  { front: 'repeated-repeated', pos: 'adj.', back: '重复的' },
+  { front: 'repeated', pos: 'adj.', back: '重复的, 反复发生的' },
+  { front: 'mental', pos: 'adj.', back: '精神上的' },
+  { front: 'mentally', pos: 'adv.', back: '精神上' },
+  { front: 'stress', pos: 'n.', back: '精神压力; 紧张' },
+  { front: 'stressed', pos: 'adj.', back: '焦虑不安的' },
+  { front: 'normal', pos: 'adj.', back: '正常的' },
+  { front: 'normally', pos: 'adv.', back: '正常地; 通常' },
+  { front: 'relaxed', pos: 'adj.', back: '放松的(人的精神状态)' },
+  { front: 'relaxing', pos: 'adj.', back: '令人放松的(事物本身)' },
+  { front: 'relax', pos: 'v.', back: '休息; 放松' },
+  { front: 'summary', pos: 'n.', back: '总结; 概括' },
+  { front: 'summarize', pos: 'v.', back: '总结; 概括' },
+  { front: 'chemistry', pos: 'n.', back: '化学; 化学性质' },
+  { front: 'chemical', pos: 'adj.', back: '化学的; n. 化学制品' },
+  { front: 'chemist', pos: 'n.', back: '药剂师; 化学家' },
+  { front: 'forget', pos: 'v.', back: 'forgot - forgotten' },
+  { front: 'forgetful', pos: 'adj.', back: '健忘的, 记性差的' },
+  { front: 'unforgettable', pos: 'adj.', back: '难以忘怀的' },
+  { front: 'improve', pos: 'v.', back: '改进; 改善' },
+  { front: 'improvement', pos: 'n.', back: '改进; 改善' },
+  { front: 'physics', pos: 'n.', back: '物理学; 物理现象' },
+  { front: 'physical', pos: 'adj.', back: '身体的; 物理的' }
+];
+
+const unit7Phrases = [
+  { front: 'flash card', back: '识字卡片' },
+  { front: 'make a point of doing sth.', back: '保证做某事' },
+  { front: 'last but not least', back: '最后但同样重要的' },
+  { front: 'natural disasters', back: '自然灾害' },
+  { front: 'figure out', back: '弄懂; 弄清楚' },
+  { front: 'take notes', back: '记笔记' },
+  { front: 'organize information', back: '整理信息' },
+  { front: 'make it visual', back: '使之形象化' },
+  { front: 'live a mentally active life', back: '过一种精神活跃的生活' },
+  { front: 'play a new instrument', back: '演奏一种新乐器' },
+  { front: 'make up a story', back: '编一个故事' },
+  { front: 'as well as', back: '和; 以及; 还有' },
+  { front: 'maintain a good memory', back: '保持良好的记忆力' },
+  { front: 'regular physical exercise', back: '有规律的体育锻炼' },
+  { front: 'get too stressed or worried', back: '过度紧张或忧虑' },
+  { front: 'tend to decline with age', back: '随着年龄而逐渐减退' },
+  { front: 'a set of', back: '一组; 一套' },
+  { front: 'learn words in context', back: '在语境中学习单词' },
+  { front: 'use mind maps', back: '用思维导图' },
+  { front: 'set a central topic', back: '设置一个中心话题' },
+  { front: 'tree rings', back: '树木年轮' },
+  { front: 'a record of', back: '...的记录' },
+  { front: 'even though', back: '虽然; 尽管' }
+];
+
+/* =========================================
+   UNIT 8 DATA
+   ========================================= */
+const unit8Vocab = [
+  { front: 'complaint', pos: 'n.', back: '投诉; 抱怨' },
+  { front: 'complain', pos: 'v.', back: '抱怨' },
+  { front: 'reason', pos: 'n.', back: '原因; 理由' },
+  { front: 'reasonable', pos: 'adj.', back: '合理的' },
+  { front: 'responsibility', pos: 'n.', back: '责任' },
+  { front: 'responsible', pos: 'adj.', back: '有责任的' },
+  { front: 'noisy', pos: 'adj.', back: '吵闹的' },
+  { front: 'noise', pos: 'n.', back: '噪音; 声响; 杂音' },
+  { front: 'noisily', pos: 'adv.', back: '吵闹地' },
+  { front: 'awake', pos: 'adj.', back: '醒着' },
+  { front: 'awaken', pos: 'v.', back: '(使)醒来' },
+  { front: 'choice', pos: 'n.', back: '选择; 抉择' },
+  { front: 'choose', pos: 'v.', back: '选择' },
+  { front: 'advise', pos: 'v.', back: '劝告; 建议' },
+  { front: 'advice', pos: 'n.', back: '劝告; 建议' },
+  { front: 'indoors', pos: 'adv.', back: '在室内' },
+  { front: 'indoor', pos: 'adj.', back: '室内的' },
+  { front: 'magical', pos: 'adj.', back: '有魔力的' },
+  { front: 'magic', pos: 'n.', back: '魔力' },
+  { front: 'wealth', pos: 'n.', back: '钱财; 财富' },
+  { front: 'wealthy', pos: 'adj.', back: '富有的' },
+  { front: 'serve', pos: 'v.', back: '接待, 服务' },
+  { front: 'service', pos: 'n.', back: '接待, 招待' },
+  { front: 'servant', pos: 'n.', back: '仆人, 佣人' },
+  { front: 'likely', pos: 'adj.', back: '可能发生的' },
+  { front: 'unlikely', pos: 'adv.', back: '不太可能发生的' },
+  { front: 'pride', pos: 'n.', back: '自豪; 骄傲' },
+  { front: 'proud', pos: 'adj.', back: '自豪的, 得意的' },
+  { front: 'proudly', pos: 'adv.', back: '傲慢地, 自负地' },
+  { front: 'take pride in', pos: 'phr.', back: '自豪; 骄傲' },
+  { front: 'be proud of', pos: 'phr.', back: '自豪的, 得意的' }
+];
+
+const unit8Phrases = [
+  { front: 'grow up', back: '长大; 成熟' },
+  { front: 'care for', back: '照顾; 照料' },
+  { front: 'in short', back: '总之; 简而言之' },
+  { front: 'have no choice but to do', back: '别无选择' },
+  { front: 'run free', back: '自由奔走' },
+  { front: 'lie around', back: '懒散度日; 游手好闲' },
+  { front: 'complain about', back: '抱怨' },
+  { front: 'in addition', back: '除...以外(还)' },
+  { front: 'catch the eye of sb.', back: '引起某人的注意' },
+  { front: 'hold...in one\'s arms', back: '把...抱在怀里' },
+  { front: 'be pleased to do sth.', back: '高兴做某事' },
+  { front: 'bring you lots of happiness', back: '给你带来许多快乐' },
+  { front: 'bark at strangers', back: '对陌生人吠叫' },
+  { front: 'a small number of', back: '少数的...' },
+  { front: 'What\'s more', back: '除此之外, ...' },
+  { front: 'large open spaces', back: '大的开放式空间' },
+  { front: 'because of all these reasons', back: '因为这些原因' },
+  { front: 'advise sb. to do sth.', back: '建议某人做某事' },
+  { front: 'grow closer', back: '变得更亲密' },
+  { front: 'relieve themselves', back: '解手' },
+  { front: 'make a loud noise', back: '发出大的噪声' },
+  { front: 'magical powers', back: '魔力' },
+  { front: 'a symbol of', back: '一种...的标志' },
+  { front: 'be full of pride for', back: '对...充满自豪' },
+  { front: 'all kinds of', back: '各种各样的' }
+];
+
 const compileUnitData = (unitId: string, vocab: any[], phrases: any[]): FlashcardData[] => {
     return [
         ...vocab.map((item, idx) => ({
@@ -427,7 +555,9 @@ export const PRELOADED_UNITS: PreloadedUnit[] = [
     { id: 'unit_grade8a_3', name: 'Grade 8A Unit 3', data: compileUnitData('u3', unit3Vocab, unit3Phrases) },
     { id: 'unit_grade8a_4', name: 'Grade 8A Unit 4', data: compileUnitData('u4', unit4Vocab, unit4Phrases) },
     { id: 'unit_grade8a_5', name: 'Grade 8A Unit 5', data: compileUnitData('u5', unit5Vocab, unit5Phrases) },
-    { id: 'unit_grade8a_6', name: 'Grade 8A Unit 6', data: compileUnitData('u6', vocabularyRaw6, phrasesRaw6) }
+    { id: 'unit_grade8a_6', name: 'Grade 8A Unit 6', data: compileUnitData('u6', vocabularyRaw6, phrasesRaw6) },
+    { id: 'unit_grade8a_7', name: 'Grade 8A Unit 7', data: compileUnitData('u7', unit7Vocab, unit7Phrases) },
+    { id: 'unit_grade8a_8', name: 'Grade 8A Unit 8', data: compileUnitData('u8', unit8Vocab, unit8Phrases) }
 ];
 
 // Deprecated single export, kept for type safety if needed, but not used in logic
